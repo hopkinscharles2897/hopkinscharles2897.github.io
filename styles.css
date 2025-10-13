@@ -196,6 +196,41 @@ header h1 {
     flex-direction: row;
     justify-content: space-between;  /* brand left, nav right */
     text-align: left;
+    /* --- Center brand + nav on phones (and allow desktop layout later) --- */
+
+/* Kill left indent and center any nav list */
+nav ul, .nav ul, .menu ul, .menu, .navigation ul {
+  list-style: none;
+  margin: 0 auto;         /* centers the block itself */
+  padding: 0;             /* removes default left indent */
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* If something was floated left, stop it */
+nav, .nav, .menu, .navigation { 
+  float: none !important;
+}
+
+/* Center common “company name / brand” elements */
+header h1, header h2, .site-title, .brand, .company, .company-name {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+/* Prevent the header container from hugging the left edge */
+header .container, .site-header .wrap, .nav-container, .topbar {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* On wider screens you c*
+
   }
 }
 
@@ -205,6 +240,7 @@ header h1 {
 
   
 }
+
 
 
 
