@@ -1,95 +1,100 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Superior Flow Node Enterprises — Charles A.Hopkins IV</title>
-<style>
-body {
-font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-margin: 0;
-padding: 0;
-line-height: 1.6;
-background:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-background-size: 400% 400%;
-animation: gradientBG 15s ease infinite;
-color: white;
-}
-
-@keyframes gradientBG {
-0% { background-position: 0% 50%; }
-50% { background-position: 100% 50%; }
-100% { background-position: 0% 50%; }
-}
-
-}
-header {
-text-align: center;
-padding: 40px 20px 20px;
-}
-.name-banner {
-font-size: clamp(28px, 6vw, 56px);
-font-weight: 800;
-margin: 0;
-}
-byline {
-font-size: 18px;
-font-weight: 500;
-margin: 8px 0 0;
-text-align: center;
-}
-
-header img {
-display: block;
-margin: 20px auto;
-max-width: 200px;
-border-radius: 50%;
-}
-  
-main {
-max-width: 800px;
-margin: 40px auto;
-padding: 0 20px;
-text-align: center;
-}
-footer {
-text-align: center;
-margin: 40px 0 20px;
-font-size: 14px;
-header {
-text-align: center;
-}
-  .name-banner {
-font-size: clamp(28px, 6vw, 56px); /* keeps it responsive */
-font-weight: 800;
-margin: 0;
-    text-align: center;
-}
-
-.byline {
-font-size: 18px;
-font-weight: 500;
-margin: 8px 0 0;
-  text-align: center; 
-}
-
-  
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Superior Flow Node Enterprises</title>
+  <meta name="description" content="Superior Flow Node Enterprises — clean execution, operator-grade systems, and field mechanics for real-world outcomes.">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-<h1 class="name-banner">Superior Flow Node Enterprises</h1>
-<p class="byline">by Charles&hairsp;A.Hopkins IV</p>
-  <img src="Charles.jpg" alt="Charles A. Hopkins IV"
-style="display:block; margin:20px auto; max-width:200px; border-radius:50%;">
-</header>
+<p style="text-align:center; font-size:18px; font-weight:500;">
+  by Charles&hairsp;A.Hopkins IV
+</p>
 
-<main>
-<p>Welcome to the official site of Superior Flow Node Enterprises. More content will be added here soon.</p>
-</main>
+  <header class="nav">
+    <div class="container">
+      <div class="brand">Superior Flow Node <span class="accent">Enterprises</span></div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#proof">Proof</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<footer>
-© 2025 by Charles&hairsp;A.Hopkins IV
-</footer>
+  <section class="hero">
+    <div class="container">
+      <h1>Signal. Collapse. Results.</h1>
+      <p>We build lean systems that remove noise and deliver outcomes. Operator-grade clarity for businesses and creators.</p>
+      <a class="btn" href="#contact">Work with us</a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Systems Setup</h3>
+          <p>Windows optimization, backup strategy, device hardening, and workspace automation to keep your machines fast, stable, and secure.</p>
+        </div>
+        <div class="card">
+          <h3>Documentation & SOPs</h3>
+          <p>Simple, repeatable playbooks for operations. Clarity beats chaos—every time.</p>
+        </div>
+        <div class="card">
+          <h3>AI Workflows</h3>
+          <p>Practical AI tooling that saves time: text pipelines, research briefs, and content accelerators tailored to your stack.</p>
+        </div>
+        <div class="card">
+          <h3>Web Presence</h3>
+          <p>Minimal, fast websites on GitHub Pages—no hosting bill, easy to update.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof" class="section alt">
+    <div class="container">
+      <h2>Proof & Principles</h2>
+      <ul class="list">
+        <li><strong>Lean by default:</strong> Fewer apps, more execution. Baseline stays clean.</li>
+        <li><strong>Backups always:</strong> If it’s not backed up, it’s not real.</li>
+        <li><strong>Operator cadence:</strong> Weekly maintenance = long machine life.</li>
+        <li><strong>Field mechanics:</strong> Clear signals collapse better outcomes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>Superior Flow Node Enterprises is led by Charles Hopkins—focused on practical systems, discipline, and results. We translate complex tools into simple, repeatable moves.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></p>
+      <p>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Superior Flow Node Enterprises — All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <footer style="text-align:center; margin-top:40px; font-size:14px; color:#555;">
+    © 2025 by Charles&hairsp;A.Hopkins IV
+  </footer>
+</body>
+</html>
 </body>
 </html>
