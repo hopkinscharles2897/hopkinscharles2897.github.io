@@ -161,11 +161,51 @@ body{
   margin: 0 auto;
   border-radius: 50%;
   max-width: 200px;
+  /* Center the brand + nav on small screens */
+.header .container,
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers brand + nav */
+  gap: 8px;
+  text-align: center;
 }
+
+/* Remove default list indentation and center items */
+.nav ul {
+  list-style: none;
+  margin: 0;             /* kills left offset */
+  padding: 0;            /* kills left offset */
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Brand line */
+.site-title,
+.brand,
+header h1 {
+  margin: 0;
+}
+
+/* On wider screens you can switch back to left-aligned header if you want */
+@media (min-width: 768px) {
+  .header .container,
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;  /* brand left, nav right */
+    text-align: left;
+  }
+}
+
+}
+
 
 
   
 }
+
 
 
 
