@@ -1,3 +1,5 @@
+body { outline: 6px solid red !important; }
+
 :root{
   --bg: #0f2a33;            /* deep teal */
   --bg-2: #0b1f25;
@@ -240,6 +242,7 @@ header .container, .site-header .wrap, .nav-container, .topbar {
 
   
 }
+
 
 
 
