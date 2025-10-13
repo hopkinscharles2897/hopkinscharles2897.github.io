@@ -1,6 +1,5 @@
-body {
-  background: yellow !important;
-}
+* { outline: 3px solid magenta !important; }
+h1 { color: lime !important; }
 
 :root{
   --bg: #0f2a33;            /* deep teal */
@@ -244,6 +243,7 @@ header .container, .site-header .wrap, .nav-container, .topbar {
 
   
 }
+
 
 
 
