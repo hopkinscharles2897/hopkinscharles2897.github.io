@@ -399,6 +399,13 @@ html { scroll-behavior: smooth; }
 .section { scroll-margin-top: 80px; }  /* adjust 80px if needed */
 
 
+.tagline {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
 
 
 
