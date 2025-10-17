@@ -391,15 +391,13 @@ header .container, .site-header .wrap, .nav-container, .topbar {
 
 /* On wider screens you c*
 
-  }
-}
+  /* Smooth scroll for anchor links */
+html { scroll-behavior: smooth; }
 
-}
+/* If your header is fixed or tall, keep sections from hiding under it */
+.sfn-about,
+.section { scroll-margin-top: 80px; }  /* adjust 80px if needed */
 
-
-
-  
-}
 
 
 
