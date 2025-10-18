@@ -589,11 +589,85 @@
     
 
  
-<!-- CONTACT (beacon) -->
-<section id="contact" style="padding:2rem 1rem; background:#111418; color:#e7e7ee; border-top:1px solid #222; scroll-margin-top:80px;">
-  <h2 style="margin:0 0 .5rem">Contact</h2>
-  <p><a href="mailto:ctheoperator@gmail.com" style="color:#8af">ctheoperator@gmail.com</a></p>
+<!-- START: Contact -->
+<section id="contact" class="sfn-contact">
+  <style>
+    .sfn-contact{
+      --bg:#0c0c0f; --ink:#e7e7ee; --muted:#a6a6b5; --accent:#8af; --line:#1a1a22; --card:#121218;
+      color:var(--ink); background:var(--bg); padding:clamp(2rem,3vw,3.5rem) 1rem;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+      scroll-margin-top: 80px;
+    }
+    .sfn-contact .wrap{max-width:860px;margin:0 auto;}
+    .sfn-contact h2{font-size:clamp(1.4rem,2.6vw,2rem);margin:0 0 .75rem}
+    .sfn-contact p.lede{color:var(--muted);margin:0 0 1.25rem}
+    .sfn-contact .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1rem 1.25rem;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .sfn-contact form{display:grid;gap:.9rem}
+    .sfn-contact label{font-size:.95rem}
+    .sfn-contact input[type="text"],
+    .sfn-contact input[type="email"],
+    .sfn-contact textarea{
+      width:100%; background:#0f0f15; color:var(--ink);
+      border:1px solid var(--line); border-radius:10px; padding:.7rem .8rem; outline:none;
+    }
+    .sfn-contact textarea{min-height:140px; resize:vertical}
+    .sfn-contact .row{display:grid; gap:.9rem}
+    @media (min-width:620px){ .sfn-contact .row{ grid-template-columns:1fr 1fr; } }
+    .sfn-contact .actions{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+    .sfn-contact .btn{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.15));
+      border:1px solid var(--line); color:var(--ink); padding:.7rem 1rem; border-radius:12px; cursor:pointer;
+    }
+    .sfn-contact .btn:hover{box-shadow:0 6px 16px rgba(0,0,0,.35)}
+    .sfn-contact .link{color:var(--accent); text-decoration:none}
+    .sfn-contact small{color:var(--muted)}
+    .sfn-contact .status{margin-top:.6rem; font-weight:600}
+    .sfn-contact .status.ok{color:#9fe59f}
+    .sfn-contact .status.err{color:#ff9f9f}
+  </style>
+
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="lede">Start a small mission. Brief me below—I'll reply with next steps and a clear scope.</p>
+
+    <div class="card">
+      <form id="contact-form" action="https://formsubmit.co/ctheoperator@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New contact via SFN site">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://hopkinscharles2897.github.io/#contact">
+
+        <div class="row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="_replyto" type="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="message">Mission Brief</label>
+          <textarea id="message" name="message" placeholder="What outcome do you want? What’s true now (Baseline)?" required></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="actions">
+          <button class="btn" type="submit">Send</button>
+          <a class="link" href="mailto:ctheoperator@gmail.com?subject=SFN%20Contact&body=Name:%0AProject:%0ABaseline:%0A">or email directly →</a>
+        </div>
+
+        <small>By sending, you agree to be contacted about your request. No spam. No list.</small>
+        <div id="form-status" class="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
 </section>
+<!-- END: Contact -->
+
 
   <footer class="footer">
     <div class="container">
